@@ -33,6 +33,10 @@ public class InventoryCloseListener extends ListenerAdapter {
                     return;
                 }
 
+                if (hInventory.closeChecker != null) {
+                    hInventory.closeChecker.accept(event);
+                }
+
                 this.inventoryManager.getPlayerInventoryMap().remove(player.getName());
                 if (this.plugin != null) {
                     Bukkit.getScheduler().runTaskLater(this.plugin, player::updateInventory, 1);

@@ -4,12 +4,14 @@ import com.hakan.inventoryapi.InventoryAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.HashMap;
+import java.util.function.Consumer;
 
 public class HInventory implements InventoryHolder {
 
@@ -18,6 +20,7 @@ public class HInventory implements InventoryHolder {
     private final Inventory bukkitInventory;
     private final String title;
     private final HashMap<Integer, ClickableItem> clickableItems = new HashMap<>();
+    public Consumer<InventoryCloseEvent> closeChecker;
     private String id;
     private boolean closable;
     private boolean clickable;
@@ -92,6 +95,10 @@ public class HInventory implements InventoryHolder {
 
     public void setClickable(boolean clickable) {
         this.clickable = clickable;
+    }
+
+    public void whenClosed(Consumer<InventoryCloseEvent> closeChecker) {
+        this.closeChecker = closeChecker;
     }
 
     public ClickableItem getItem(int slot) {

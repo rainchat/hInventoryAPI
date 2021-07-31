@@ -21,6 +21,10 @@ public class HInventoryCloseEvent extends Event implements Cancellable {
         this.event = event;
     }
 
+    public static HandlerList getHandlerList() {
+        return handlers;
+    }
+
     public Player getPlayer() {
         return this.player;
     }
@@ -44,10 +48,6 @@ public class HInventoryCloseEvent extends Event implements Cancellable {
     }
 
     public HandlerList getHandlers() {
-        return handlers;
-    }
-
-    public static HandlerList getHandlerList() {
         return handlers;
     }
 }

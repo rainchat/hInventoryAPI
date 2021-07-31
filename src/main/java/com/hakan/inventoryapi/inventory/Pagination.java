@@ -20,16 +20,6 @@ public class Pagination {
         this.itemSlots = new ArrayList<>();
     }
 
-    public void setPage(int page) {
-        if (this.clickableItems.size() == 0) return;
-        else if (this.hInventory == null) return;
-        else if (this.itemSlots.size() == 0) return;
-
-        int oldPage = this.page;
-        this.page = page;
-        if (!this.updateInventory()) this.page = oldPage;
-    }
-
     public void nextPage() {
         this.setPage(this.page + 1);
     }
@@ -76,6 +66,16 @@ public class Pagination {
 
     public int getPage() {
         return this.page;
+    }
+
+    public void setPage(int page) {
+        if (this.clickableItems.size() == 0) return;
+        else if (this.hInventory == null) return;
+        else if (this.itemSlots.size() == 0) return;
+
+        int oldPage = this.page;
+        this.page = page;
+        if (!this.updateInventory()) this.page = oldPage;
     }
 
     public int getLastPage() {
