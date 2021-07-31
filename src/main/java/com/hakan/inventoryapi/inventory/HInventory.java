@@ -14,6 +14,7 @@ import java.util.HashMap;
 public class HInventory implements InventoryHolder {
 
     private final InventoryManager inventoryManager;
+    private final Pagination pagination;
     private final Inventory bukkitInventory;
     private final String title;
     private final HashMap<Integer, ClickableItem> clickableItems = new HashMap<>();
@@ -23,6 +24,7 @@ public class HInventory implements InventoryHolder {
 
     public HInventory(InventoryAPI inventoryAPI, String title, InventoryType inventoryType, int size, String id, boolean closable, boolean clickable) {
         this.inventoryManager = inventoryAPI.getInventoryManager();
+        this.pagination = new Pagination(this);
 
         this.id = id;
         this.closable = closable;
@@ -107,7 +109,7 @@ public class HInventory implements InventoryHolder {
     }
 
     public Pagination getPagination() {
-        return new Pagination(this);
+        return this.pagination;
     }
 
     @Override

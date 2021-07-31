@@ -21,7 +21,7 @@ public class InventoryClickListener extends ListenerAdapter {
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
-        if (event.getClick().equals(ClickType.UNKNOWN) || event.getClickedInventory() == null || event.getCurrentItem() == null) {
+        if (event.getClick().equals(ClickType.UNKNOWN) || event.getClickedInventory() == null) {
             event.setCancelled(true);
             return;
         }
@@ -34,6 +34,8 @@ public class InventoryClickListener extends ListenerAdapter {
                 return;
             } else if (!hInventory.isClickable() && event.getClickedInventory().equals(player.getInventory())) {
                 event.setCancelled(true);
+                return;
+            } else if (hInventory.isClickable() && event.getClickedInventory().equals(player.getInventory())) {
                 return;
             }
 
