@@ -91,6 +91,6 @@ public class ExampleInventory extends JavaPlugin {
 <dependency>
     <groupId>com.github.hakan-krgn</groupId>
     <artifactId>hInventoryAPI</artifactId>
-    <version>1.0.1</version>
+    <version>VERSION</version>
 </dependency>
 ```
