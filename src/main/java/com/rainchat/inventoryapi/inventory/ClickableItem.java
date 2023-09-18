@@ -35,6 +35,10 @@ public class ClickableItem {
         this.click = click;
     }
 
+    public void setItem(ItemStack item) {
+        this.item = item;
+    }
+
     public Consumer<InventoryClickEvent> getClick() {
         return this.click;
     }
