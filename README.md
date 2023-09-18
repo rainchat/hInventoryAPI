@@ -89,7 +89,7 @@ public class ExampleInventory extends JavaPlugin {
 </repositories>
 
 <dependency>
-    <groupId>com.github.hakan-krgn</groupId>
+    <groupId>com.github.rainchat</groupId>
     <artifactId>hInventoryAPI</artifactId>
     <version>VERSION</version>
 </dependency>
