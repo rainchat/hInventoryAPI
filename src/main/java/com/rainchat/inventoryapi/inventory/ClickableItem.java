@@ -31,6 +31,10 @@ public class ClickableItem {
         return this.item;
     }
 
+    public void setClick(Consumer<InventoryClickEvent> click) {
+        this.click = click;
+    }
+
     public Consumer<InventoryClickEvent> getClick() {
         return this.click;
     }
