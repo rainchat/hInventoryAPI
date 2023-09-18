@@ -1,4 +1,4 @@
-package com.hakan.inventoryapi.inventory;
+package com.rainchat.inventoryapi.inventory;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

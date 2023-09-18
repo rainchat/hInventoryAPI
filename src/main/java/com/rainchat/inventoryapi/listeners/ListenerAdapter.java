@@ -1,7 +1,7 @@
-package com.hakan.inventoryapi.listeners;
+package com.rainchat.inventoryapi.listeners;
 
-import com.hakan.inventoryapi.InventoryAPI;
-import com.hakan.inventoryapi.inventory.InventoryManager;
+import com.rainchat.inventoryapi.InventoryAPI;
+import com.rainchat.inventoryapi.inventory.InventoryManager;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 

@@ -1,6 +1,6 @@
-package com.hakan.inventoryapi.customevents;
+package com.rainchat.inventoryapi.customevents;
 
-import com.hakan.inventoryapi.inventory.HInventory;
+import com.rainchat.inventoryapi.inventory.HInventory;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;

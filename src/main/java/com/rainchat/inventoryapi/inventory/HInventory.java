@@ -1,6 +1,6 @@
-package com.hakan.inventoryapi.inventory;
+package com.rainchat.inventoryapi.inventory;
 
-import com.hakan.inventoryapi.InventoryAPI;
+import com.rainchat.inventoryapi.InventoryAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

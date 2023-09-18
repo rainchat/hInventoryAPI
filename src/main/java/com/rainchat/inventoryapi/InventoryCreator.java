@@ -1,6 +1,6 @@
-package com.hakan.inventoryapi;
+package com.rainchat.inventoryapi;
 
-import com.hakan.inventoryapi.inventory.HInventory;
+import com.rainchat.inventoryapi.inventory.HInventory;
 import org.bukkit.ChatColor;
 import org.bukkit.event.inventory.InventoryType;
 

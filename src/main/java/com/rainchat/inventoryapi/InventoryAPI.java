@@ -1,11 +1,11 @@
-package com.hakan.inventoryapi;
+package com.rainchat.inventoryapi;
 
-import com.hakan.inventoryapi.inventory.InventoryManager;
-import com.hakan.inventoryapi.listeners.bukkit.PlayerQuitListener;
-import com.hakan.inventoryapi.listeners.bukkit.PluginDisableListener;
-import com.hakan.inventoryapi.listeners.inventory.InventoryClickListener;
-import com.hakan.inventoryapi.listeners.inventory.InventoryCloseListener;
-import com.hakan.inventoryapi.listeners.inventory.InventoryOpenListener;
+import com.rainchat.inventoryapi.inventory.InventoryManager;
+import com.rainchat.inventoryapi.listeners.bukkit.PlayerQuitListener;
+import com.rainchat.inventoryapi.listeners.bukkit.PluginDisableListener;
+import com.rainchat.inventoryapi.listeners.inventory.InventoryClickListener;
+import com.rainchat.inventoryapi.listeners.inventory.InventoryCloseListener;
+import com.rainchat.inventoryapi.listeners.inventory.InventoryOpenListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;

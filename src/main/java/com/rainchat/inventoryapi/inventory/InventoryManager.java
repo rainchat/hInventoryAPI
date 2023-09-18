@@ -1,4 +1,4 @@
-package com.hakan.inventoryapi.inventory;
+package com.rainchat.inventoryapi.inventory;
 
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;

@@ -1,21 +1,21 @@
-package com.hakan.inventoryapi.customevents;
+package com.rainchat.inventoryapi.customevents;
 
-import com.hakan.inventoryapi.inventory.HInventory;
+import com.rainchat.inventoryapi.inventory.HInventory;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
-import org.bukkit.event.inventory.InventoryOpenEvent;
+import org.bukkit.event.inventory.InventoryCloseEvent;
 
-public class HInventoryOpenEvent extends Event implements Cancellable {
+public class HInventoryCloseEvent extends Event implements Cancellable {
 
     private static final HandlerList handlers = new HandlerList();
     private final Player player;
     private final HInventory hInventory;
-    private final InventoryOpenEvent event;
+    private final InventoryCloseEvent event;
     private boolean cancelled = false;
 
-    public HInventoryOpenEvent(Player player, HInventory hInventory, InventoryOpenEvent event) {
+    public HInventoryCloseEvent(Player player, HInventory hInventory, InventoryCloseEvent event) {
         this.player = player;
         this.hInventory = hInventory;
         this.event = event;
@@ -33,7 +33,7 @@ public class HInventoryOpenEvent extends Event implements Cancellable {
         return this.hInventory;
     }
 
-    public InventoryOpenEvent getOpenEvent() {
+    public InventoryCloseEvent getCloseEvent() {
         return this.event;
     }
 

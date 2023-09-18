@@ -1,9 +1,9 @@
-package com.hakan.inventoryapi.listeners.inventory;
+package com.rainchat.inventoryapi.listeners.inventory;
 
-import com.hakan.inventoryapi.InventoryAPI;
-import com.hakan.inventoryapi.customevents.HInventoryOpenEvent;
-import com.hakan.inventoryapi.inventory.HInventory;
-import com.hakan.inventoryapi.listeners.ListenerAdapter;
+import com.rainchat.inventoryapi.InventoryAPI;
+import com.rainchat.inventoryapi.customevents.HInventoryOpenEvent;
+import com.rainchat.inventoryapi.inventory.HInventory;
+import com.rainchat.inventoryapi.listeners.ListenerAdapter;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
